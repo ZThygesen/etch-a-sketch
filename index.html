@@ -6,10 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="draw-container">
-
+    <div class="header">
+        <h1>Etch-A-Sketch</h1>
+    </div>
+    <div class="content">
+        <div class="left">
+            <div class="color-changer">
+                <div class="wheel-border"><div id="pen-wheel"><input type="color" value="#000000" id="default"></div></div>
+                <p>Pen</p>
+            </div>
+            <button id="pen">Pen</button>
+            <button id="rainbow">Rainbow</button>
+            <button id="shade">Shade</button>
+        </div>
+        <div class="middle">
+            <div class="draw-container"></div>
+            <div class="slider">
+                <input type="range" min="1" max="64" value="16" id="size">
+                <p id="grid-size">16 x 16</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="color-changer">
+                <div class="wheel-border"><div id="bg-wheel"><input type="color" value="#cfcfcf" id="background"></div></div>
+                <p>Background</p>
+            </div>
+            <button id="grid-toggle">Toggle Grid</button>
+            <button id="eraser">Eraser</button>
+            <button id="clear">Reset</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div>Made by <a href="https://github.com/ZThygesen">ZThygesen</a></div>
     </div>
 
     <script src="./etch_a_sketch.js"></script>
