@@ -179,9 +179,12 @@ function shadeSquare(square) {
     }
     let currVal = parseInt(square.classList[2]);
     square.classList.remove(`${currVal}`);
-    currVal = Math.round(currVal * 0.75);
+    currVal = Math.round(currVal * 0.85);
     square.classList.add(`${currVal}`);
     square.style.backgroundColor = `rgb(${currVal}, ${currVal}, ${currVal}`;
+    if (!grid) {
+        square.style.border = `1px solid rgb(${currVal}, ${currVal}, ${currVal}`;
+    }
 }
 
 const boxes = document.querySelectorAll(".draw-container > div");
