@@ -11,8 +11,6 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-
-
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -24,8 +22,6 @@ body {
 		background-position: 0% 50%;
 	}
 }
-
-
 /* ---------------------------------------------------- */
 
 .header {
